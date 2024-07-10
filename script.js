@@ -2,7 +2,7 @@
 const verses = [
     { content: "For God so loved the world that he gave his one and only Son, that whoever believes in him shall not perish but have eternal life.", reference: "John 3:16" },
     { content: "The Lord is my shepherd, I lack nothing.", reference: "Psalm 23:1" },
-    { content: "I can do all this through him who gives me strength.", reference: "Philippians 4:13" },
+    { content: "I can do all things through him who gives me strength.", reference: "Philippians 4:13" },
     { content:"The Lord bless you and keep you; the Lord make his face to shine upon you and be gracious to you.", reference: "Numbers 6:24-25" },
 { content:"Trust in the Lord with all your heart, and do not lean on your own understanding.", reference: "Proverbs 3:5" },
 { content:"But the fruit of the Spirit is love, joy, peace, patience, kindness, goodness, faithfulness.",reference: "Galatians 5:22" },
@@ -20,7 +20,7 @@ const verses = [
 { content:"The fear of the Lord is the beginning of wisdom, and the knowledge of the Holy One is insight.", reference: "Proverbs 9:10" },
 { content:"But they who wait for the Lord shall renew their strength; they shall mount up with wings like eagles; they shall run and not be weary; they shall walk and not faint.", reference: "Isaiah 40:31" },
 { content:"Jesus said to him, 'I am the way, and the truth, and the life. No one comes to the Father except through me.", reference: "John 14:6" },
-
+{content:"No weapon formed against me shall prosper.", reference: "Isaiah 54:17" },
 ];
 
 const verseContent = document.getElementById('verse-content');
@@ -39,5 +39,7 @@ function displayVerse() {
 
 newVerseBtn.addEventListener('click', displayVerse);
 
+
+    colorBox.classList.add(colorClasses[currentColorIndex]);
 
 displayVerse();
